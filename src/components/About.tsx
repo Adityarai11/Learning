@@ -29,6 +29,16 @@ const About: React.FC = () => {
                 <div className="bg-red-600/20 p-3 rounded-full">
                   <Award className="h-6 w-6 text-red-500" />
                 </div>
+                 <div>
+                  <h4 className="text-white font-bold">Certified </h4>
+                  <p className="text-gray-400 text-sm">Professional Strength Lifting Gold Medalist</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-3">
+                <div className="bg-red-600/20 p-3 rounded-full">
+                  <Clock className="h-6 w-6 text-red-500" />
+                </div>
                 <div>
                   <h4 className="text-white font-bold">Certified Pro</h4>
                   <p className="text-gray-400 text-sm">IFBB Professional</p>
@@ -51,7 +61,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-bold">Clients</h4>
-                  <p className="text-gray-400 text-sm">500+ Transformed</p>
+                  <p className="text-gray-400 text-sm">100+ Transformed</p>
                 </div>
               </div>
               
