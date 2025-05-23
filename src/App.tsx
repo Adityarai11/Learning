@@ -12,7 +12,7 @@ import './index.css';
 
 function App() {
   useEffect(() => {
-    document.title = 'PowerPeak - Professional Body Transformation';
+    document.title = 'TrainWith KR - Professional Body Transformation';
   }, []);
 
   return (
