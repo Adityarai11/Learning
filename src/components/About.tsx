@@ -21,7 +21,7 @@ const About: React.FC = () => {
             <h3 className="text-4xl font-bold text-white mb-6">Professional Body Transformation Coach</h3>
             
             <p className="text-gray-300 mb-8 leading-relaxed">
-              With over 10 years of experience in professional bodybuilding and fitness coaching, I've helped hundreds of clients achieve their dream physiques through science-based training and nutrition protocols. My approach combines cutting-edge research with practical experience to deliver exceptional results for every client.
+              With over 10 years of dedicated experience as a competitive athlete and fitness coach, I’ve trained and mentored individuals to unlock peak physical performance through proven, science-backed training systems. Whether it's preparing for the next competition or elevating athletic potential, my approach blends research-driven programming with real-world athletic discipline to deliver measurable results and long-term success.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mb-8">
