@@ -60,14 +60,14 @@ const Footer: React.FC = () => {
               <h5 className="font-bold text-lg mb-4">Contact</h5>
               <ul className="space-y-2">
                 <li className="text-gray-400">
-                  <span className="block">123 Fitness Street</span>
-                  <span className="block">Muscle City, MC 12345</span>
+                  <span className="block">INDIA</span>
+                  <span className="block">BIHAR</span>
                 </li>
                 <li className="text-gray-400">
-                  <span className="block">Phone: (555) 123-4567</span>
+                  <span className="block">Phone: (+91) 7827501846 </span>
                 </li>
                 <li className="text-gray-400">
-                  <span className="block">Email: coach@trainwithkr.com</span>
+                  <span className="block">Email: trainwithkr@gmail.com</span>
                 </li>
               </ul>
             </div>
