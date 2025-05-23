@@ -1,8 +1,5 @@
-import React, { useEffect, useRef, Suspense } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import React, { useEffect, useRef } from 'react';
 import { ArrowRight } from 'lucide-react';
-import ThreeDModel from './ThreeDModel';
 
 const Hero: React.FC = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -34,56 +31,31 @@ const Hero: React.FC = () => {
       />
       <div className="absolute inset-0 bg-black/60 z-10"></div>
       
-      <div className="container mx-auto px-4 relative z-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight animate-fade-in">
-              <span className="inline-block transform transition-transform hover:scale-105 duration-300">TRANSFORM</span> 
-              <span className="block text-red-500 transform transition-transform hover:scale-105 duration-300">YOUR PHYSIQUE</span>
-            </h1>
-            
-            <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto lg:mx-0 leading-relaxed animate-fade-in-delay">
-              Expert coaching, personalized plans, and proven results for serious athletes and fitness enthusiasts.
-            </p>
-            
-            <div className="flex flex-col sm:flex-row items-center lg:justify-start justify-center gap-4 animate-fade-in-delay-2">
-              <a 
-                href="#services" 
-                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-md transition-all duration-300 font-bold text-lg uppercase flex items-center gap-2 group"
-              >
-                Explore Services
-                <ArrowRight className="inline-block ml-1 group-hover:translate-x-1 transition-transform duration-300" />
-              </a>
-              
-              <a 
-                href="#transformations" 
-                className="bg-transparent border-2 border-white hover:border-red-500 text-white hover:text-red-500 px-8 py-4 rounded-md transition-all duration-300 font-bold text-lg uppercase"
-              >
-                View Results
-              </a>
-            </div>
-          </div>
+      <div className="container mx-auto px-4 relative z-20 text-center">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight animate-fade-in">
+          <span className="inline-block transform transition-transform hover:scale-105 duration-300">TRANSFORM</span> 
+          <span className="block text-red-500 transform transition-transform hover:scale-105 duration-300">YOUR PHYSIQUE</span>
+        </h1>
+        
+        <p className="text-xl md:text-2xl text-gray-300 mb-10 max-w-3xl mx-auto leading-relaxed animate-fade-in-delay">
+          Expert coaching, personalized plans, and proven results for serious athletes and fitness enthusiasts.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-in-delay-2">
+          <a 
+            href="#services" 
+            className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-md transition-all duration-300 font-bold text-lg uppercase flex items-center gap-2 group"
+          >
+            Explore Services
+            <ArrowRight className="inline-block ml-1 group-hover:translate-x-1 transition-transform duration-300" />
+          </a>
           
-          <div className="h-[500px] w-full hidden lg:block relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent z-10 pointer-events-none" />
-            <Canvas
-              camera={{ position: [0, 0, 5], fov: 45 }}
-              style={{ background: 'transparent' }}
-            >
-              <ambientLight intensity={0.5} />
-              <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
-              <pointLight position={[-10, -10, -10]} intensity={0.5} />
-              <Suspense fallback={null}>
-                <ThreeDModel />
-              </Suspense>
-              <OrbitControls
-                enableZoom={false}
-                enablePan={false}
-                minPolarAngle={Math.PI / 3}
-                maxPolarAngle={Math.PI / 1.5}
-              />
-            </Canvas>
-          </div>
+          <a 
+            href="#transformations" 
+            className="bg-transparent border-2 border-white hover:border-red-500 text-white hover:text-red-500 px-8 py-4 rounded-md transition-all duration-300 font-bold text-lg uppercase"
+          >
+            View Results
+          </a>
         </div>
       </div>
       
